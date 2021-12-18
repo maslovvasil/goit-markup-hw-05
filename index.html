@@ -43,7 +43,7 @@
         <section class="hero">
             <h1 class="hero-idea">Эффективные решения <br>
                 для вашего бизнеса</h1>
-            <button class="service" type="button">Заказать услугу</button>
+            <button class="service" type="button" data-modal-open>Заказать услугу</button>
         </section>
         <!--section features-->
         <section class="section">
@@ -99,9 +99,29 @@
             <div class="container">
                 <h2 class="imgs">Чем мы занимаемся</h2>
                 <ul class="photo-list">
-                    <li class="photo-item"><img src="images/programs.jpg" width="370" class="photo-link" alt="програмиравание"></li>
-                    <li class="photo-item"><img src="images/webapplication.jpg" width="370" class="photo-link" alt="вебприложения"></li>
-                    <li class="photo-item"><img src="images/web-security.jpg" width="370" class="photo-link" alt="информбезопасность"></li>
+                    <li class="photo-item">
+                        <div class="description-photo">
+                            <img src="images/programs.jpg" width="370" class="photo-link" alt="програмиравание">
+                            <div class="description">
+                                <p class="description-title">Десктопные приложения</p>
+                            </div>
+                        </div></li>
+                    <li class="photo-item">
+                        <div class="description-photo">
+                            <img src="images/webapplication.jpg" width="370" class="photo-link" alt="вебприложения">
+                            <div class="description">
+                                <p class="description-title">Мобильные приложения</p>
+                            </div>
+                        </div>
+                    </li>
+                     <li class="photo-item">
+                        <div class="description-photo">
+                            <img src="images/web-security.jpg" width="370" class="photo-link" alt="информбезопасность">
+                            <div class="description">
+                                <p class="description-title">Дизайнерские решения</p>
+                            </div>
+                    </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -261,6 +281,7 @@
                 </ul>
             </div>
         </section>
+        <!--clients-->
         <section class="section clients">
             <div class="container">
                 <h2 class="section-title">Постоянные клиенты</h2>
@@ -360,9 +381,21 @@
                     </li>
                 </ul>
             </div>
-           
         </div>
-        
     </footer>
+    <!--Модальне вікно-->
+      <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="11" height="11">
+                    <use href="./images/symbol-defs.svg#modal-close">
+                    </use>
+                </svg>
+            </button>
+          </div>
+
+      </div>
+    <!--script-->
+    <script src="./js/modal.js"></script>
 </body>
 </html>
